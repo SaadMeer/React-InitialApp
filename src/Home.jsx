@@ -1,19 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import web from '../src/images/img2.1.png';
+import Common from './Common';
 
 const Home = () => {
     return (
         <div>
-            <section id='header' className=''>
-                <div className='container-fluid nav-bg'>
-                    <div className="row">
-                        <div className="col-10 mx-auto">
-                            <div className='col-md-6 pt-lg-0 order-2 order-lg-1'>
-                                <h1>Grow Your Business With <strong>GetFood</strong></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Common name='Grow your Business with' imgsrc={web} visit='/contact' btname='Get Started' />
         </div>
     );
 }
